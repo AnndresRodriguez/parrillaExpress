@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -11,12 +12,12 @@
 |
 */
 
-// Route::get('menu', function () {
-//     return view ('vistas.navbar');
-// });
+
 
 Route::get('/', function () {
-    return view ('templates.home');
+    return view ('clientes');
+
+           
 });
 
 

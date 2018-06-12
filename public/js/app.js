@@ -12975,7 +12975,7 @@ var vm = new Vue({
                 fecha: '2018-02-11',
                 pendiente: true,
                 avance: '60%',
-                borrador: 'Proyecto 1',
+                borrador: 'Victor L',
                 editando: false
 
             },
@@ -12986,7 +12986,7 @@ var vm = new Vue({
                 fecha: '11-12-2018',
                 pendiente: true,
                 avance: '60%',
-                borrador: 'Proyecto 2',
+                borrador: 'Andres C',
                 editando: false
 
             },

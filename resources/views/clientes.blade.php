@@ -20,7 +20,7 @@
                               <!-- <h2 class="mb-0">$10,200</h2> -->
                               <div class="d-flex align-items-center ml-2">
                                 <i class="fa fa-calendar-check-o text-muted"></i>
-                                <small class=" ml-1 mb-0">Fecha de Inicio @{{proyecto.fecha}}</small>
+                                <small class=" ml-1 mb-0">Fecha de Primera compra @{{proyecto.fecha}}</small>
                               </div>
                             </div>
                             <small class="text-gray">&nbsp  Avance actual del proyecto : @{{proyecto.avance}}</small>
@@ -75,6 +75,12 @@
                   </div>
                 </div>
               </div>
+
+
+
+            
+
+
            
           </div>
 

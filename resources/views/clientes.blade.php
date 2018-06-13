@@ -4,7 +4,26 @@
 
  <div class="container" id="Titulo">
 
-        <h2 style="margin-top:30px; margin-bottom:30px">Nuestros Clientes Parrilla</h2>
+        <div class="flex-row justify-between align-center" style="margin-top:30px; margin-bottom:30px">
+          
+        <h2 >Nuestros Clientes Parrilla &nbsp <i class="fa fa-users" aria-hidden="true"></i></h2>
+
+        <div class="flex-column justify-center align-center ml-30">
+          
+            <div class="button-add-client flex-column justify-center align-center">
+              <i class="fa fa-user-plus fa-2x" aria-hidden="true" style="color: white"></i>
+            </div>
+
+            <h4 class="centrado" style="margin-top: 5px;">Añadir Cliente</h4>
+
+        </div>
+
+        
+
+
+        </div>
+
+      
 
            <div class="row">
   
@@ -13,24 +32,42 @@
                   <div class="card-body">
                     
                       <template v-if="!proyecto.editando">
-                        <h4 class="card-title mb-0" >@{{proyecto.nombre}}</h4>
-                         <div class="d-flex justify-content-between align-items-center">
-                          <div class="d-inline-block pt-3">
-                            <div class="d-flex">
-                              <!-- <h2 class="mb-0">$10,200</h2> -->
-                              <div class="d-flex align-items-center ml-2">
+                        
+
+                         <div class="flex-row">
+                        
+                         <div class="flex-column">
+
+                                 <h4  class="card-title">@{{proyecto.nombre}}</h4>
+                              
+                                <div class="flex-row card--fecha">
                                 <i class="fa fa-calendar-check-o text-muted"></i>
                                 <small class=" ml-1 mb-0">Fecha de Primera compra @{{proyecto.fecha}}</small>
-                              </div>
-                            </div>
-                            <small class="text-gray">&nbsp  Avance actual del proyecto : @{{proyecto.avance}}</small>
+
+                                </div>
+
+                                <div class="flex-row card--fecha">
+                           
+                                <i class="fa fa-calendar-check-o text-muted"></i>
+                                <small class=" ml-1 mb-0">Fecha de Ultima compra @{{proyecto.fecha}}</small>
+
+                                 </div>
+                          
+                                <div class="flex-row card--fecha">
+
+                               
+                                <i class="fa fa-star" aria-hidden="true" style="color:#ffcc2a;"></i>
+                                <small class=" ml-1 mb-0">&nbsp  Nivel de fiablilidad : @{{proyecto.avance}}</small>
+
+                                 </div>
                           </div>
-                          <div class="d-inline-block">
+
+                          <div>
                             
-                            <div class="bg-success px-4 py-2 rounded">
-                              <i class="fa fa-user-circle-o text-white icon-lg"></i>
-                            </div>
-                          </div> 
+                                <div class="card--foto"></div>
+
+                          </div>
+
                         </div>
 
                       </template>
@@ -74,15 +111,10 @@
                     
                   </div>
                 </div>
-              </div>
-
-
-
-            
-
-
-           
+              </div>         
           </div>
+
+         
 
           </div>
 	{{-- expr --}}

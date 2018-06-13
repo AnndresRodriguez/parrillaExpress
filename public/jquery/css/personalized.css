@@ -3,3 +3,121 @@
 	background: #680809;
 
 }
+
+
+.flex-row{
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+
+.flex-column{
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+
+
+.justify-center{
+
+	justify-content: center;
+
+}
+
+.justify-start{
+
+	justify-content: flex-start;
+
+}
+
+.justify-end{
+
+	justify-content: flex-end;
+
+}
+
+.justify-between{
+
+	justify-content: space-between;
+
+}
+
+.justify-around{
+
+	justify-content: space-around;
+
+}
+
+.align-center{
+
+	align-items: center;
+
+}
+
+.align-start{
+
+	align-items: flex-start;
+
+}
+
+.align-end{
+
+	align-items: end;
+
+}
+
+.align-around{
+
+	align-items: space-around;
+}
+
+.card--fecha,
+.card--fiabilidad{
+
+	margin-top: 10px;
+
+}
+
+.card--foto{
+
+	margin-left: 50px;
+	height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #ffcc2a;
+
+}
+
+.button-add-client{
+  height: 70px;
+  width: 70px;
+  background: steelblue;
+  border-radius: 50%;
+  background: #09b76b;
+  cursor: pointer;
+
+}
+
+
+
+.button-add-client:hover{
+
+	background: #107348
+}
+
+.ml-30{
+
+	margin-left: 30px;
+
+}
+
+.centrado{
+
+	text-align: center;
+}
+
+

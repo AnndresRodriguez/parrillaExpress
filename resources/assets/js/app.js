@@ -32,6 +32,30 @@ var vm = new Vue({
 
             },
 
+              {
+
+                nombre: 'Jessica María Daza',
+                fecha: '2018-11-12',
+                pendiente: true,
+                avance: '60%',
+                borrador: 'Andres C',
+                editando: false
+
+            },
+
+               {
+
+                nombre: 'Jonathan Quiñonez Q',
+                fecha: '2018-11-12',
+                pendiente: true,
+                avance: '60%',
+                borrador: 'Andres C',
+                editando: false
+
+            },
+
+
+
         ]
 
 

@@ -88,7 +88,11 @@
 	height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: #ffcc2a;
+    /*background: #ffcc2a;*/
+    background-image: url(../../img/silueta.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    border: solid #680809 2px;
 
 }
 
@@ -118,6 +122,19 @@
 .centrado{
 
 	text-align: center;
+}
+
+@media (max-width: 1353px){
+
+	.card--foto{
+
+	height: 120px;
+    width: 120px;
+    border-radius: 50%;
+   
+
+}
+
 }
 
 

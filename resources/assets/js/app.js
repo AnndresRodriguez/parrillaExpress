@@ -12,33 +12,30 @@ var vm = new Vue({
 
             {
 
-                nombre: 'Victor Ernesto Leal',
+                nombre: 'Alejandra Marín',
                 fecha: '2018-02-11',
-                pendiente: true,
-                avance: '60%',
-                borrador: 'Victor L',
+                fiabilidad: '90%',
+                borrador: 'Alejandra M',
                 editando: false
 
             },
 
             {
 
-                nombre: 'Andres Joel Carrillo',
-                fecha: '11-12-2018',
-                pendiente: true,
-                avance: '60%',
+                nombre: 'Andres Carrillo',
+                fecha: '2018-02-11',
+                fiabilidad: '10%',
                 borrador: 'Andres C',
                 editando: false
 
             },
 
-              {
+            {
 
-                nombre: 'Jessica María Daza',
+                nombre: 'Joel Rodríguez',
                 fecha: '2018-11-12',
-                pendiente: true,
-                avance: '60%',
-                borrador: 'Andres C',
+                fiabilidad: '10%',
+                borrador: 'Joel R',
                 editando: false
 
             },
@@ -47,9 +44,8 @@ var vm = new Vue({
 
                 nombre: 'Jonathan Quiñonez Q',
                 fecha: '2018-11-12',
-                pendiente: true,
-                avance: '60%',
-                borrador: 'Andres C',
+                fiabilidad: '60%',
+                borrador: 'Jonathan Q',
                 editando: false
 
             },
@@ -66,36 +62,29 @@ var vm = new Vue({
     methods: {
 
 
-        verificarCompletado(tarea) {
+        iconoEditar(proyecto) {
 
-            return tarea.pendiente ? '' : 'tarea-completada';
-
+            return proyecto.editando ? 'fa-times' : 'fa-check';
         },
 
-        iconoCheckeable(tarea) {
+        iconoBorrar(proyecto) {
 
-            return tarea.pendiente ? 'glyphicon-unchecked' : 'fa-pencil-square-o';
-
-        },
-
-        iconoEditar(tarea) {
-
-            return tarea.editando ? 'fa-times' : 'fa-check';
-        },
-
-        iconoBorrar(tarea) {
-
-            return tarea.editando ? 'fa-times' : 'fa-trash';
+            return proyecto.editando ? 'fa-times' : 'fa-trash';
         },
 
 
         crearTarea() {
 
-            this.tareas.push({
-                'descripcion': this.nuevaTarea,
-                'borrador': this.nuevaTarea,
-                'pendiente': true,
-                'editando': false
+            var f = new Date();
+
+            this.proyectos.push({
+  
+
+                'nombre': this.nuevaTarea,
+                'fecha': f.getFullYear() + "-" + (f.getMonth() +1) + "-" + f.getDate(),
+                'fiabilidad': '10%',
+                'borrador': 'New User',
+                'editando': true
 
             });
 
@@ -106,33 +95,33 @@ var vm = new Vue({
         },
 
 
-        funcionEditOrAccept(tarea) {
+        funcionEditOrAccept(proyecto) {
 
 
-            if (!tarea.editando) {
+            if (!proyecto.editando) {
 
-                tarea.editando = true;
+                proyecto.editando = true;
 
             } else {
 
 
-                tarea.editando = false;
-                tarea.descripcion = tarea.borrador;
+                proyecto.editando = false;
+                proyecto.descripcion = proyecto.borrador;
 
             }
 
         },
 
-        funcionDeleteOrCancel(tarea, index) {
+        funcionDeleteOrCancel(proyecto, index) {
 
-            if (tarea.editando) {
+            if (proyecto.editando) {
 
-                tarea.borrador = tarea.descripcion;
-                tarea.editando = false;
+                proyecto.borrador = proyecto.nombre;
+                proyecto.editando = false;
 
             } else {
 
-                this.tareas.splice(index, 1);
+                this.proyectos.splice(index, 1);
 
             }
         },

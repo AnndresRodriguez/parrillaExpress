@@ -6,19 +6,22 @@
 
             <div class="flex-row justify-between align-center" style="margin-top:30px; margin-bottom:30px">
               
-            <h2 >Nuestros Clientes Parrilla &nbsp <i class="fa fa-users" aria-hidden="true"></i></h2>
+            <h2>Nuestros Clientes Parrilla &nbsp <i class="fa fa-users" aria-hidden="true"></i></h2>
 
             <div class="flex-column justify-center align-center ml-30">
               
                 <div class="button-add-client flex-column justify-center align-center" @click="crearTarea">
                   <i class="fa fa-user-plus fa-2x" aria-hidden="true" style="color: white"></i>
-                </div>
+
+            </div>
+
+            </div>    
 
                 <h4 class="centrado" style="margin-top: 5px;">Añadir Cliente</h4>
 
             </div>
 
-        </div>
+        
 
       
 
